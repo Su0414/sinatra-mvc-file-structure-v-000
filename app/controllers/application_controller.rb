@@ -14,6 +14,6 @@ class ApplicationController < Sinatra::Base
     @dog.name = "spot"
     @dog.breed = "labrador"
     @dog.age = 5
-    @dog.save
+
   end
 end
