@@ -1,4 +1,4 @@
-class Dog < Sinatra::Base
+class Dog < ActiveRecord::Base
 
   attr_accessor :name, :breed, :age
   @@all = []
