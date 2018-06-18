@@ -3,10 +3,10 @@ class Dog < Sinatra::Base
   attr_accessor :name, :breed, :age
   @@all = []
 
-  def initiatize(name, breed, age)
-    @name = name
-    @breed = breed
-    @age = age
+  def initiatize(args)
+    @name = args[:name]
+    @breed = args[:breed]
+    @age = args[:age]
   end
 
   def self.all
