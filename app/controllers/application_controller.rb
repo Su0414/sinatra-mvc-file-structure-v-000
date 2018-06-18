@@ -10,6 +10,6 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/' do
-    @dogs = Dog.all
+    @dogs = Dog.new(name: => "Spot", breed: => "labrabor", age: => 4)
   end
 end
