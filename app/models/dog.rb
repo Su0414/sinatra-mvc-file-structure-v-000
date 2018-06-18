@@ -1,4 +1,4 @@
-class Dog < ActiveRecord::Base
+class Dog < ActiveRecord::Migration
 
   attr_accessor :name, :breed, :age
   @@all = []
